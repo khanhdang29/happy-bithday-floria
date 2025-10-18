@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chúc mừng sinh nhật</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js" defer></script>
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <!-- Animate.css -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="main.css" rel="stylesheet">
+    <!--Custom JS-->
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <section class="hero-section">
+        <div class="container">
+            <div class="hero-content animate__animated animate__fadeIn">
+                <div class="cake-icon">🎂</div>
+                <h1 class="hero-title animate__animated animate__bounceIn animate__delay-1s">
+                    Chúc Mừng Sinh Nhật!
+                </h1>
+                <p class="hero-subtitle animate__animated animate__fadeIn animate__delay-2s">
+                    Chúc chị một ngày sinh nhật thật đặc biệt và đáng nhớ! 🎉
+                </p>
+                <button class="btn btn-light btn-lg animate__animated animate__pulse animate__infinite" onclick="scrollToWishes()">
+                    <i class="fas fa-gift"></i> Xem Lời Chúc
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Messages Section -->
+    <section class="message-section" id="wishes">
+        <div class="container">
+            <div class="row mt-5">
+                <div class="col-12 text-center mb-4">
+                    <h3 class="text-white">🎁 Món Quà Đặc Biệt 🎁</h3>
+                </div>
+                <div class="col-12 text-center">
+                    <div class="gift-box" onclick="openGift()">
+                        <span id="giftIcon">🎁</span>
+                    </div>
+                    <p class="text-white h5">Nhấn vào hộp quà để mở! 🎉</p>
+                </div>
+            </div>
+
+            <!-- Hidden Message -->
+            <div class="row mt-4">
+                <div class="col-12">
+                    <div id="secretMessage" class="wishes-card text-center" style="display: none;">
+                        <h3>🌟 Gửi tới chị Floria 🌟</h3>
+                        <p class="lead">
+                            "Chúc chị tuổi mới luôn vui vẻ hạnh phúc,<br>
+                            Gặp nhiều điều may mắn trong cuộc sống,<br>
+                            Luôn xinh đẹp và tỏa sáng như bông hoa rực rỡ,<br>
+                            Thuận lợi tốt nghiệp ra trường,<br>
+                            Sớm đạt 1 triệu sub cho kênh YouTube của mình,<br>
+                            Và mãi là cô gái tuyệt vời trong mắt mọi người.<br>
+                            Cuối cùng là chúc chị có một ngày sinh nhật thật vui vẻ bên gia đình và bạn bè!<br>
+                            🎉🎂🎈"
+                        </p>
+                        <p class="h4">❤️ Chúc mừng sinh nhật! ❤️</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Photo Gallery -->
+            <div class="row">
+                <div class="col-md-6 col-lg-4 mb-4 photo-gallery">
+                    <div class="card-custom">
+                        <div>
+                            <img src="img/coscantarella.jpg" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4 photo-gallery">
+                    <div class="card-custom">
+                        <div>
+                            <img src="img/flo.jpg" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4 photo-gallery">
+                    <div class="card-custom">
+                        <div>
+                            <img src="img/flopose.jpg" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4 photo-gallery">
+                    <div class="card-custom">
+                        <div>
+                            <img src="img/flohoa.jpg" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4 photo-gallery">
+                    <div class="card-custom">
+                        <div>
+                            <img src="img/maid.jpg" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4 photo-gallery">
+                    <div class="card-custom">
+                        <div>
+                            <img src="img/oldmodel.jpg" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4 photo-gallery">
+                    <div class="card-custom">
+                        <div>
+                            <img src="img/coscarlota.jpg" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4 photo-gallery">
+                    <div class="card-custom">
+                        <div>
+                            <img src="img/cosherta.jpg" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                </div><div class="col-md-6 col-lg-4 mb-4 photo-gallery">
+                    <div class="card-custom">
+                        <div>
+                            <img src="img/cosviolet.jpg" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Background Music -->
+    <div class="music-controls-container">
+            <button id="toggleMusic" class="toggle-music-btn">
+                <span id="musicIcon">🔇</span>
+                <span id="musicText">Bật nhạc</span>
+            </button>
+            <div class="music-controls">
+                <span class="volume-icon">🔊</span>
+                <input type="range" id="volumeControl" class="volume-control" min="0" max="1" step="0.01" value="0.5">
+            </div>
+    </div>
+
+        <!-- Background Music -->
+        <audio id="bgMusic" loop>
+            <source src="iLoveYt.net_YouTube_Bai-Hat-Chuc-Mung-Sinh-Nhat-Tieng-Viet-N_Media_5DcKlZnmVNs_007_48k.m4a" type="audio/mp4">
+        </audio>
+
+</body>
+</html>
